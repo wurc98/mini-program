@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+   <van-slider value="50" bind:change="onChange" />
+</view>
