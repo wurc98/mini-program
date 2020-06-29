@@ -32,8 +32,15 @@ App({
         }
       }
     })
+    wx.getSystemInfo({
+      success: (result) => {
+        console.log(result)
+        this.globalData.height = result.windowHeight
+      },
+    })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    height:null
   }
 })

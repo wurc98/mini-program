@@ -1,17 +1,19 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/search/search",
+    "pages/results/results"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "罄竹商城",
     "navigationBarTextStyle":"black"
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
-    "van-slider": "@vant/weapp/slider/index"
+    "van-slider": "@vant/weapp/slider/index",
+    "van-search": "@vant/weapp/search/index"
   }
 }

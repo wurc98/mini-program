@@ -1,4 +1,16 @@
-<!--index.wxml-->
 <view class="container">
-   <van-slider value="50" bind:change="onChange" />
+	<view class="search">
+		<van-search bind:focus="searchFocus" placeholder="请输入搜索关键词" />
+	</view>
+	<view class="page-section page-section-spacing swiper">
+		<swiper indicator-dots="true" autoplay="true" interval="{{2000}}" duration="{{500}}">
+			<block wx:for="{{background}}" wx:key="*this">
+				<swiper-item>
+					<view class="swiper-item {{item}}">
+						{{item}}
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
 </view>
